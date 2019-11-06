@@ -15,3 +15,6 @@ Tour of Heroes App
     3.執行 ng serve -0
 	4.停止 Ctr + C
 
+
+
+

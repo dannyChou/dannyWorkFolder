@@ -11,6 +11,7 @@ import { HeroService } from '../hero.service';
 })
 export class HeroesComponent implements OnInit {
   heroes: Hero[];
+  selectedHero: Hero;
 
   constructor(private heroService: HeroService) { }
 
@@ -36,5 +37,7 @@ export class HeroesComponent implements OnInit {
     this.heroes = this.heroes.filter(h => h !== hero);
     this.heroService.deleteHero(hero).subscribe();
   }
+  
+  selectHero(hero: Hero) { this.selectedHero = hero; }
   
 }
