@@ -11,12 +11,18 @@ import { UserService } from './user.service';
 
 import { UserListComponent } from './user-list/user-list.component';
 import { UserFormComponent } from './user-form/user-form.component';
+import { MyDemoComponent } from './my-demo/my-demo.component';
+import { ChangeTextDirective } from './change-text.directive';
+import { SqrtPipe } from './sqrt.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
-    UserFormComponent
+    UserFormComponent,
+    MyDemoComponent,
+    ChangeTextDirective,
+    SqrtPipe
   ],
   imports: [
     BrowserModule,
