@@ -9,8 +9,6 @@ import { ProductRepository } from "../model/product.repository";
   styleUrls: ['./store.component.css']
 })
 export class StoreComponent implements OnInit {
-
-  //private repository: ProductRepository
   constructor(private repository: ProductRepository) { }
 
   ngOnInit() {
