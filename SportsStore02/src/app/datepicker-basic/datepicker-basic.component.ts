@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 
+
 @Component({
   selector: 'app-datepicker-basic',
   templateUrl: './datepicker-basic.component.html',
@@ -16,7 +17,7 @@ export class DatepickerBasicComponent implements OnInit {
   ngOnInit() {
   }
 
-  selectToday(){
+  selectToday() {
     this.model = this.calendar.getToday();
   }
 }
